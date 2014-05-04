@@ -1,0 +1,4 @@
+gos_fixture:
+    foo:
+    bar:
+        - foo/bar

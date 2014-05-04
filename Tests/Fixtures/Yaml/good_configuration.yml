@@ -1,0 +1,3 @@
+gos_fixture:
+    directories:
+        - 'foo/bar'

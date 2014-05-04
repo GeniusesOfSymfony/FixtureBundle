@@ -1,0 +1,25 @@
+{
+    "name": "gos/fixture-bundle",
+    "description": "Fixture bundle, fixture, bundle, fixture tool, doctrine, orm",
+    "keywords": ["Reflector", "Reflector Bundle", "Bundle"],
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Johann Saunier",
+            "email": "johann_27@hotmail.fr"
+        }
+    ],
+    "require":
+    {
+        "php": ">=5.3.0",
+        "symfony/framework-bundle": "~2.3",
+        "gos/fixture": "dev-master",
+        "doctrine/doctrine-fixtures-bundle": "2.2.*@dev"
+    },
+    "autoload": {
+        "psr-0": { "Gos\\Bundle\\FixtureBundle\\": "" }
+    },
+    "target-dir": "Gos/Bundle/FixtureBundle",
+    "minimum-stability": "dev"
+}

@@ -1,0 +1,8 @@
+parameters:
+    gos_fixture_bundle_fixture: Gos\Component\Fixture\Fixture
+
+services:
+    gos.fixture_bundle.fixture:
+        class: %gos_fixture_bundle_fixture%
+        arguments:
+            - %gos_fixture_directories%
