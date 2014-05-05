@@ -13,9 +13,9 @@
     "require":
     {
         "php": ">=5.3.0",
-        "symfony/framework-bundle": "~3.0",
+        "symfony/framework-bundle": "~2.3",
         "gos/fixture": "dev-master",
-        "doctrine/doctrine-fixtures-bundle": "2.2.*@dev"
+        "doctrine/doctrine-fixtures-bundle": "2.2.*"
     },
     "autoload": {
         "psr-0": { "Gos\\Bundle\\FixtureBundle\\": "" }
