@@ -7,6 +7,18 @@
 Installation
 ------------
 
+You need to have [composer](https://getcomposer.org/) to install dependencies.
+
+```json
+{
+    "require": {
+        "gos/fixture-bundle": "{last stable version}"
+    }
+}
+```
+
+Then run the command on the root of your project`composer update`
+
 Add this line in your `AppKernel.php`
 
 ```php
