@@ -24,8 +24,14 @@ abstract class AbstractFixtureBundleExtensionTest extends \PHPUnit_Framework_Tes
         $this->container->registerExtension($this->extension);
     }
 
+    /**
+     * @param string $resource
+     */
     abstract protected function loadConfiguration(ContainerBuilder $container, $resource);
 
+    /**
+     * @param string $file
+     */
     protected function compileWithConfig($file)
     {
         $this->loadConfiguration($this->container, $file);
@@ -41,7 +47,7 @@ abstract class AbstractFixtureBundleExtensionTest extends \PHPUnit_Framework_Tes
     public function testServiceParametersWithGoodConfiguration()
     {
         $this->compileWithoutConfig('good_configuration');
-        $this->assertNotEquals(array('foo/bar'), $this->container->getParameter('gos_fixture_directories'));
+        $this->assertNotEquals(['foo/bar'], $this->container->getParameter('gos_fixture_directories'));
     }
 
     public function testServiceWithoutConfig()
