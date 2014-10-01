@@ -18,9 +18,11 @@
         "doctrine/doctrine-fixtures-bundle": "2.2.*"
     },
     "autoload": {
-        "psr-0": { "Gos\\Bundle\\FixtureBundle\\": "" }
+        "psr-4": { "Gos\\Bundle\\FixtureBundle\\": "" }
     },
-    "target-dir": "Gos/Bundle/FixtureBundle",
+    "autoload-dev": {
+        "psr-4": { "Gos\\Bundle\\FixtureBundle\\Tests\\": "/Tests" }
+    },
     "extra": {
         "branch-alias": {
             "dev-master": "1.0.x-dev"
