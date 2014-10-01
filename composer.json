@@ -12,14 +12,19 @@
     ],
     "require":
     {
-        "php": ">=5.3.0",
+        "php": ">=5.4",
         "sensio/framework-extra-bundle": "~3.0",
-        "gos/fixture": "dev-master",
+        "gos/fixture": "~1.0@dev",
         "doctrine/doctrine-fixtures-bundle": "2.2.*"
     },
     "autoload": {
         "psr-0": { "Gos\\Bundle\\FixtureBundle\\": "" }
     },
     "target-dir": "Gos/Bundle/FixtureBundle",
-    "minimum-stability": "dev"
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        },
+        "minimum-stability": "dev"
+    }
 }
